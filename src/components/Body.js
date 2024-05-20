@@ -2,6 +2,8 @@ import React from "react";
 import Login from "./Login";
 import Browse from "./Browse";
 import { RouterProvider, createBrowserRouter } from "react-router-dom";
+import MovieDetails from "./MovieDetails";
+import Errorpage from "./ErrorPage";
 
 const Body = () => {
   const appRouter = createBrowserRouter([
@@ -13,6 +15,14 @@ const Body = () => {
       path: "/browse",
       element: <Browse />,
     },
+    {
+      path: "/movie/:id",
+      element: <MovieDetails />
+    },
+    {
+      path: "/error",
+      element: <Errorpage />,
+  },
   ]);
 
   return (

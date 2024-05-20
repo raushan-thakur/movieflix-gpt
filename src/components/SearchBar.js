@@ -42,7 +42,9 @@ const SearchBar = () => {
 
     // console.log(gptResults.choices?.[0]?.message?.content);
     // const gptMovies = gptResults.choices?.[0]?.message?.content.split(",");
-    const gptMovies = ["Raaz","Bhoot", "Hera Pheri", "Dhamaal", "No 1"];
+    //const gptMovies = ["Raaz","Bhoot", "Hera Pheri", "Dhamaal", "No 1"];
+    const gptMovies = [searchText.current[0].value,"Bhoot", "Hera Pheri", "Dhamaal", "No 1"];
+
 
     // ["Andaz Apna Apna", "Hera Pheri", "Chupke Chupke", "Jaane Bhi Do Yaaro", "Padosan"]
 
