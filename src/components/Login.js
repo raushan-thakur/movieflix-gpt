@@ -15,7 +15,8 @@ const Login = () => {
   const [isSignInForm, setisSignInForm] = useState(true);
   const [errorMessage, setErrormessage] = useState(null);
   const dispatch = useDispatch();
-
+//  user@netflix.com
+//  User@3480
   const name = useRef(null);
   const email = useRef(null);
   const password = useRef(null);
@@ -111,12 +112,14 @@ const Login = () => {
           ref={email}
           className="bg-gray-700 p-4 my-4 w-full   bg-opacity-60"
           type="text"
+          defaultValue="user@netflix.com"
           placeholder="Email or Phone Number"
         />
         <input
           ref={password}
           className="bg-gray-700 p-4 my-4 w-full bg-opacity-60"
           type="password"
+          defaultValue="User@3480"
           placeholder="Password"
         />
         <p className="text-xl text-red-600 p-2  ">{errorMessage}</p>
