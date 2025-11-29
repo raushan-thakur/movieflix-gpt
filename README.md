@@ -1,5 +1,5 @@
 # Movieflix - GPT
-https://movieflixgpt-e2534.web.app/
+https://movieflix-gpt-tau.vercel.app/
 - Create React App
 - Configured Tailwind CSS
 - Header
